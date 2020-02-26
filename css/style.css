@@ -221,6 +221,10 @@ SECTION WRAPS
   color: white;
 }
 
+#footwrap a {
+  color: white;
+}
+
 #footwrap h3 {
   color: white;
 }
