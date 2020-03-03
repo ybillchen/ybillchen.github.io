@@ -150,6 +150,7 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
+  background: #3b4357;
   background: url(../img/head.png) no-repeat center top;
   margin-top: 60px;
   padding-top: 140px;
