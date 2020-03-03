@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Lato", "SimSun";
+  font-family: "Lato", "STSong";
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -171,13 +171,13 @@ SECTION WRAPS
 
 #headerwrap h1 {
   font-size: 72px;
-  font-family: "Raleway", "SimSun";
+  font-family: "Raleway", "STSong";
   color: white;
 }
 
 #headerwrap h3 {
   font-size: 24px;
-  font-family: "Raleway", "SimSun";
+  font-family: "Raleway", "STSong";
   color: white;
 }
 
