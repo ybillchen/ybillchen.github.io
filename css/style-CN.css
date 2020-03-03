@@ -153,6 +153,7 @@ SECTION WRAPS
   background: black url(../img/head.png) no-repeat center top;
   margin-top: 60px;
   padding-top: 140px;
+  padding-bottom: 140px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
