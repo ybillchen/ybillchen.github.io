@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Helvetica", "STSong";
+  font-family: "Helvetica", "STHeiti";
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -11,7 +11,7 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica", "STSong";
+  font-family: "Helvetica", "STHeiti";
   font-weight: 300;
   color: #555;
 }
@@ -73,7 +73,7 @@ hr {
   right: 0;
   z-index: 10000;
   overflow: visible;
-  font: normal 16px/24px "Helvetica", "STSong";
+  font: normal 16px/24px "Helvetica", "STHeiti";
 }
 
 #section-topbar a {
@@ -171,13 +171,13 @@ SECTION WRAPS
 
 #headerwrap h1 {
   font-size: 72px;
-  font-family: "Raleway", "STSong";
+  font-family: "Raleway", "STHeiti";
   color: white;
 }
 
 #headerwrap h3 {
   font-size: 24px;
-  font-family: "Raleway", "STSong";
+  font-family: "Raleway", "STHeiti";
   color: white;
 }
 
