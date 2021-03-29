@@ -13,13 +13,13 @@ body {
 h1, h2 {
   font-family: "Helvetica", "STHeiti";
   font-weight: 300;
-  color: #555;
+  color: #000;
 }
 
 h3, h4, h5, h6 {
   font-family: "Helvetica", "STHeiti";
   font-weight: 500;
-  color: #555;
+  color: #000;
 }
 
 /* Paragraph & Typographic */
