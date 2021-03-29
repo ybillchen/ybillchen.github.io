@@ -117,7 +117,7 @@ By default, top navigation bar uses "fixed" position
 
 #section-topbar ul#nav a {
   display: block;
-  font: normal 16px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 16px/18px "Helvetica", "STHeiti";
   text-decoration: none;
   padding: 20px 20px 20px 20px;
   min-height: 60px;
@@ -177,13 +177,13 @@ SECTION WRAPS
 
 #headerwrap h1 {
   font-size: 72px;
-  font-family: "Raleway", "STHeiti";
+  font-family: "Helvetica", "STHeiti";
   color: white;
 }
 
 #headerwrap h3 {
   font-size: 24px;
-  font-family: "Raleway", "STHeiti";
+  font-family: "Helvetica", "STHeiti";
   color: white;
 }
 
