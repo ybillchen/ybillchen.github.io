@@ -47,7 +47,7 @@ a {
 
 a:hover, a:focus {
   color: #7b7b7b;
-  text-decoration: none;
+  /*text-decoration: none;*/
   outline: 0;
 }
 
@@ -206,6 +206,15 @@ SECTION WRAPS
   padding-right: 8px;
   vertical-align: middle;
 }
+
+#intro a {
+  color: #f08baf;
+}
+
+#intro a:hover, a:focus {
+  color: #ababab;
+}
+
 
 #skillswrap {
   background: #3b4357;
