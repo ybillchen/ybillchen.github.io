@@ -38,39 +38,24 @@ p {
 a {
   color: #cb3c6f;
   word-wrap: break-word;
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover, a:focus {
   color: #7b7b7b;
-  /*text-decoration: none;*/
+  text-decoration: none;
   outline: 0;
-}
-
-a:before, a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
 
-/*---------------------------------------------------
-3.1 Topbar
----------------------------------------------------*/
+/* Topbar */
 
 #section-topbar {
   position: fixed;
@@ -91,12 +76,6 @@ hr {
   line-height: 0;
   text-align: center;
 }
-
-/*
-Top Bar
-
-By default, top navigation bar uses "fixed" position
-*/
 
 #section-topbar ul#nav {
   display: inline-block;
@@ -148,10 +127,6 @@ By default, top navigation bar uses "fixed" position
 #section-topbar i {
   font-size: 25px;
 }
-
-/*---------------------------------------------------
-SECTION WRAPS
----------------------------------------------------*/
 
 /* Header Wrap */
 
@@ -215,16 +190,7 @@ SECTION WRAPS
   color: #ababab;
 }
 
-#skillswrap {
-  background: #3b4357;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: white;
-}
-
-#skillswrap h3, p {
-  color: white;
-}
+/* Foot Wrap */
 
 #footwrap {
   background: #3f3f3f;
@@ -237,6 +203,10 @@ SECTION WRAPS
 }
 
 #footwrap a {
+  color: #f08baf;
+}
+
+#footwrap a:hover, a:focus {
   color: white;
 }
 
@@ -267,10 +237,6 @@ SECTION WRAPS
   margin: 0 0 5px 0;
 }
 
-.credits {
-  color: #999;
-}
-
 /* Global Values */
 
 .desc {
@@ -297,108 +263,4 @@ SECTION WRAPS
 
 sm {
   font-size: 14px;
-}
-
-/* Contact Form */
-
-.contact-form label {
-  color: #999;
-}
-
-.contact-form input, .contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
-
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button {
-  background: #44bbaa;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.contact-form .form-send button:hover {
-  background: #23c8b1;
-}
-
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
 }
