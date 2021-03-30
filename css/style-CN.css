@@ -265,10 +265,18 @@ sm {
   font-size: 14px;
 }
 
-
 .btn-pdf {
   font-size: 15px; 
   border-radius: 6px; 
   color: #cb3c6f; 
   border-color: #cb3c6f;
+  background-color: transparent;
+}
+
+.btn-pdf-intro {
+  font-size: 15px; 
+  border-radius: 6px; 
+  color: #f08baf; 
+  border-color: #f08baf;
+  background-color: transparent;
 }
