@@ -152,7 +152,7 @@ hr {
 
 @font-face {
     font-family: 'STKaiti_backup';
-    src: url('https://github.com/ybillchen/ybillchen.github.io/tree/master/font/STKaiti.ttf') format('truetype');
+    src: url('https://github.com/ybillchen/ybillchen.github.io/raw/master/font/STKaiti.ttf') format('truetype');
 }
 
 #headerwrap h1 {
