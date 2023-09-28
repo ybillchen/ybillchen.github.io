@@ -150,9 +150,14 @@ hr {
   background-size: cover;
 }
 
+@font-face {
+    font-family: 'STKaiti_backup';
+    src: url('https://github.com/ybillchen/ybillchen.github.io/tree/master/font/STKaiti.ttf') format('truetype');
+}
+
 #headerwrap h1 {
   font-size: 72px;
-  font-family: "Helvetica", "STKaiti", "STHeiti";
+  font-family: "Helvetica", "STKaiti", "STKaiti_backup", "STHeiti";
   text-shadow: 0 0 6px black;
   color: white;
 }
