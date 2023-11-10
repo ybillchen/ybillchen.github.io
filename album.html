@@ -1,173 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Bill Chen Album</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Bill Chen">
+    <title>Hompage Template</title>
 
-  <!-- Favicons -->
-  <link href="img/icon.svg" rel="icon">
-  <link href="img/icon.svg" rel="apple-touch-icon">
+    <link href="figs/icon.svg" rel="icon">
+    <link href="figs/icon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <body>
 
-  <style type="text/css">.first {margin-top: 60px;}</style>
-
-</head>
-
-<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
-
-  <div id="section-topbar">
-    <div id="topbar-inner">
+    <nav class="navbar fixed-top navbar-expand-md">
       <div class="container">
-        <div class="row">
-          <div class="dropdown">
-            <ul id="nav" class="nav">
-              <li class="menu-item"><a href="./index.html">Home</a></li>
-              <li class="menu-item hidden-xs"><a href="./research.html">Research</a></li>
-              <li class="menu-item hidden-xs active"><a href="./album.html">Album</a></li>
-              <li class="menu-item"><a href="./index-CN.html">中文</a></li>
-              <li class="dropdown visible-xs">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                <ul class="dropdown-menu dropdown-menu-right" style="background: #2f2f2f">
-                  <li class="menu-item"><a href="./research.html">Research</a></li>
-                  <li class="menu-item active"><a href="./album.html">Album</a></li>
-                </ul>
-              </li>
-            </ul>
-            <!--/ uL#nav -->
-          </div>
-          <!-- /.dropdown -->
-
-          <div class="clear"></div>
+        <a class="navbar-brand" href="index.html">Bill's album</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="figs/list.svg" alt="menu" width="30px">
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link active" href="album.html">Album</a>
+            <a class="nav-link" href="chinese.html">中文</a>
+          </ul>
         </div>
-        <!--/.row -->
       </div>
-      <!--/.container -->
+    </nav>
 
-      <div class="clear"></div>
-    </div>
-    <!--/ #topbar-inner -->
-  </div>
-  <!--/ #section-topbar -->
-
-
-
-  <section id="work" name="work">
-    <!--PORTFOLIO DESCRIPTION -->
-    <div class="first container desc">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-1">
-          <h3>Album</h3><br/>
-        </div>
-        <div class="col-md-8">
-          <p>
-            <t>Graduation from Peking Univsity</t><br/>
-            After a half-year online semester due to COVID-19, I finally returned to Peking University for my undergraduate graduation ceremony!
-            <br/>
-          </p>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-          <table  style="margin-bottom:30px"  width=100%><tr>
-            <td width=100%><img class="img-responsive" src="img/album/pku-graduation.jpg" alt="pku-graduation"></td>
-          </tr></table>
-          <br/>
-        </div>
-
-        <div class="col-md-8 col-md-offset-3">
-          <p>
-            <t>Life in Boston</t><br/>
-            In 2019, I spent a fantastic summer at MIT Kavli Institute, Boston. When not doing research, I cooked a lot. The seafood was incredibly cheap. I also visited the USS Constitution, which I used to think only existed in Star Trek! <br/>
-          </p>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-          <table style="margin-bottom:3px" width=100%><tr>
-            <td width=50%><img class="img-responsive" src="img/album/working.jpg" border=0 width="99%" alt="working"></td>
-            <td width=50%><img class="img-responsive" src="img/album/cooking.jpg" border=0 width="99%" alt="cooking"></td>
-          </tr></table>
-          <table style="margin-bottom:30px" width=100%><tr>
-            <td width=50%><img class="img-responsive" src="img/album/seafood.jpg" border=0 width="99%" alt="seafood"></td>
-            <td width=50%><img class="img-responsive" src="img/album/USSConst.jpg" border=0 width="99%" alt="USSConst"></td>
-          </tr></table>
-          <br/>
-        </div>
-
-        <div class="col-md-8 col-md-offset-3">
-          <p>
-            <t>Hierarchical cluster formation in a giant molecular cloud</t><br/>
-              Head picture of this website. I use AREPO (<a rel="noopener noreferrer" target="_blank" href="https://academic.oup.com/mnras/article/401/2/791/1147356">Springel 2010</a>) to run the simulation and Matplotlib to create the picture. <a rel="noopener noreferrer" target="_blank" href="./research.html">Click here</a> for details.<br/>
-          </p>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-          <table  style="margin-bottom:30px" width=100%><tr>
-            <td width=100%><img class="img-responsive" src="img/head.png" alt="Hierarchical cluster formation in a giant molecular cloud"></td>
-          </tr></table>
-        </div>
-
-      </div>
-      <!--/.row -->
-      <br/>
-      <br/>
-    </div>
-    <!--/.container -->
-  </section>
-
-  <section id="contact" name="contact">
-    <!--FOOTER DESCRIPTION -->
-    <div id="footwrap">
+    <div id="album">
       <div class="container">
-        <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
 
-          <div class="col-md-2 col-md-offset-1">
-            <h3>Contact</h3><br/>
-          </div>
-          <div class="col-md-6">
-            <p>
-              <t>Email</t><br/> ybchen (at) umich.edu <br/>
+          <div class="card">
+            <h3 class="card-title">Life in Boston</h3>
+            <p class="card-text">
+              In 2019, I spent a fantastic summer at MIT Kavli Institute, Boston. When not doing research, I cooked a lot. The seafood was incredibly cheap. I also visited the USS Constitution, which I used to think only existed in Star Trek!
             </p>
-            <p>
-              <t>Adress</t><br/> 323 West Hall, 1085 S. University, Ann Arbor, MI 48109-1107, USA <br/>
-            </p>
-            <p>
-              <t>Sitemap</t><br/>
-              <a rel="noopener noreferrer" target="_blank" href="https://orcid.org/0000-0002-5970-2563"><img border="0" src="./img/orcid.svg" width=16 style="margin-bottom: 0px"></a>&nbsp;
-              <a rel="noopener noreferrer" target="_blank" href="https://github.com/ybillchen"><img border="0" src="./img/github.svg" width=16 style="margin-bottom: 0px"></a>&nbsp;
-              <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/yingtianchen"><img border="0" src="./img/linkedin.svg" width=16 style="margin-bottom: 0px"></a>&nbsp;
-              <a rel="noopener noreferrer" target="_blank" href="https://www.zhihu.com/people/enthalpy-4-88"><img border="0" src="./img/zhihu.svg" width=16 style="margin-bottom: 0px"></a>
-              <br/>
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a rel="noopener noreferrer" target="_blank" href="figs/album/working.jpg">
+                    <img src="figs/album/working.jpg" class="d-block w-100" alt="My desk">
+                  </a>
+                  <div class="carousel-caption d-md-block">
+                    <h3>My desk</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a rel="noopener noreferrer" target="_blank" href="figs/album/cooking.jpg">
+                    <img src="figs/album/cooking.jpg" class="d-block w-100" alt="Making dumplings">
+                  </a>
+                  <div class="carousel-caption d-md-block">
+                    <h3>Making dumplings</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a rel="noopener noreferrer" target="_blank" href="figs/album/seafood.jpg">
+                    <img src="figs/album/seafood.jpg" class="d-block w-100" alt="Crabs and lobsters">
+                  </a>
+                  <div class="carousel-caption d-md-block">
+                    <h3>Crabs and lobsters</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a rel="noopener noreferrer" target="_blank" href="figs/album/USSConst.jpg">
+                    <img src="figs/album/USSConst.jpg" class="d-block w-100" alt="USSConst">
+                  </a>
+                  <div class="carousel-caption d-md-block">
+                    <h3> v</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
           </div>
-          <div class="col-md-2">
-            <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=51w0vqyzpzo&amp;m=0c&amp;c=cb3c6f&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;cw=f2f2f2&amp;cb=3f3f3f" async="async"></script>
-          </div>
+
         </div>
-        <!--/.row -->
       </div>
-      <!--/.container -->
     </div>
-    <!--/ #footer -->
-  </section>
 
-  <div id="copyrights">
-    <div class="container">
-      <p class="hidden-xs">
-        &copy; 2020-2023 Bill Chen. Last Modified in March 2023.
-      </p>
-      <p class="visible-xs">
-        &copy; 2020-2023 Bill Chen. <br/>
-        Last Modified in March 2023.
-      </p>
+    <div id="copyrights">
+      <div class="container">
+        <div class="col-md-8 offset-md-2">
+          <p>&copy; 2020-<span id="year"></span> Bill Chen</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-
-</body>
+    <script src="bootstrap/bootstrap.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+      
+  </body>
 </html>
