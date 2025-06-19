@@ -42,8 +42,8 @@
           </p>
           <ul>
             <li><b><a rel="noopener noreferrer" href="#clusters_formation">Formation of star clusters</a></b></li>
-            <li><b><a rel="noopener noreferrer" href="#clusters_evolution">Globular clusters and galaxy assembly</a></b></li>
             <li><b><a rel="noopener noreferrer" href="#streams">Stellar streams</a></b></li>
+            <li><b><a rel="noopener noreferrer" href="#clusters_evolution">Globular clusters and galaxy assembly</a></b></li>
             <li><b><a rel="noopener noreferrer" href="#grb">Gamma-ray bursts</a></b></li>
           </ul>
         </div>
@@ -101,6 +101,117 @@
               <div class="col-lg-5">
                 <a rel="noopener noreferrer" target="_blank" href="figs/research/cluster_formation_model.png">
                   <img width=90% align="right" src="figs/research/cluster_formation_model.png" class="img-fluid rounded-start" alt="prj-TH">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <div id="streams" class="section">
+      <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+          <h1>Stellar streams</h1>
+          <p>
+            When a progenitor star cluster or a dwarf galaxy is orbiting the host galaxy, tidal forces strip stars away from the L<sub>1</sub> and L<sub>2</sub> Lagrange points, forming a stellar stream with a leading arm and a trailing arm. These streams, stretching across wide sky areas, can reveal information not only about the host galaxy but also the progenitor itself.
+          </p>
+
+          <div class="card">
+            <div class="row">
+              <h3 class="card-title">Modelling stellar streams that emerge from globular clusters</h3>
+              <p>
+                <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024arXiv240801496C/abstract" class="btn" role="button">Chen et al. (2025)</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://github.com/ybillchen/particle_spray" class="btn" role="button">Tutorial notebook</a>
+              </p>
+              <div class="col-lg-7">
+                <p class="card-text">
+                  We develop a new particle spray algorithm to model the formation of globular cluster streams. The algorithm ejects stream tracer particles based on 6D phase space distributions calibrated to N-body simulations. It successfully matches the morphology and kinematics of simulated streams with higher accuracy than most existing particle spray methods. The new algorithm is implemented in galactic dynamics codes <span style="font-family: monospace;">agama</span>, <span style="font-family: monospace;">gala</span>, <span style="font-family: monospace;">galax</span>, and <span style="font-family: monospace;">galpy</span> for public use.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Figure: positions and velocity vectors of escaped stream particles near the Lagrange points.
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <a rel="noopener noreferrer" target="_blank" href="figs/research/movie_one_panel_co_rotate.gif">
+                  <img width=100% src="figs/research/movie_one_panel_co_rotate.gif" class="img-fluid rounded-start" alt="stream">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <h3 class="card-title">Measuring mass loss rates of globular clusters using stellar streams</h3>
+              <p>
+                <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024arXiv241119899C/abstract" class="btn" role="button">Chen, Li, & Gnedin (2025)</a>
+              </p>
+              <div class="col-lg-7">
+                <p class="card-text">
+                  By comparing the densities of streams recently discovered by <i>Gaia</i> DR3 with mock streams generated using our new particle spray algorithm, we present the first direct measurement of mass loss rates for 12 Galactic globular clusters. We further explore correlations between the mass loss rate and key GC properties, confirming theoretical predictions from N-body simulations.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Figure: mass loss rates of 12 Galactic globular clusters plotted against cluster mass.
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <a rel="noopener noreferrer" target="_blank" href="figs/research/mdot_scaling.png">
+                  <img width=100% src="figs/research/mdot_scaling.png" class="img-fluid rounded-start" alt="mass loss rate">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <h3 class="card-title">Most realistic mock catalog of globular cluster streams</h3>
+              <p>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Holm-Hansen, Chen, & Gnedin (in prep.)</a>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Catalog</a>
+              </p>
+              <div class="col-lg-6">
+                <p class="card-text">
+                  We use a comprehensive model of globular cluster formation and disruption, coupled with our new particle spray algorithm, to generate the most realistic mock catalog of globular cluster streams in simulated Milky Way-like galaxies.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Figure: map of mock stream stars in the Galactic coordinate system with G < 20.
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <a rel="noopener noreferrer" target="_blank" href="figs/research/stream_map.png">
+                  <img width=100% src="figs/research/stream_map.png" class="img-fluid rounded-start" alt="stream map">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <h3 class="card-title">Detetcting streams around globular clusters</h3>
+              <p>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Chen et al. (in prep.)</a>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">GitHub repo</a>
+              </p>
+              <div class="col-lg-7">
+                <p class="card-text">
+                  We develop a new detection to detect stellar streams around globular clusters by constructing a mixture model containing a stream model and background. The stream model is based on our new particle spray algorithm, without assuming the shape and orientation of streams. The new method shows 70% completeness and purity when tested on mock data, and successfully detects streams around most globular clusters in our Galaxy when applied to <i>Gaia</i> DR3 data.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Figure: an example stream revealed by the new method.
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <a rel="noopener noreferrer" target="_blank" href="figs/research/method_demo_phi1phi2.png">
+                  <img width=100% src="figs/research/method_demo_phi1phi2.png" class="img-fluid rounded-start" alt="stream detection">
                 </a>
               </div>
             </div>
@@ -172,11 +283,11 @@
               <p>
                 <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2023arXiv230913374C/abstract" class="btn" role="button">Chen & Gnedin (2024a)</a>
                 <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..23C/abstract" class="btn" role="button">Chen & Gnedin (2024b)</a>
-                <a rel="noopener noreferrer" target="_blank" href="https://github.com/ognedin/gc_model_mw" class="btn" role="button">Catalogue</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://github.com/ognedin/gc_model_mw" class="btn" role="button">Catalog</a>
               </p>
               <div class="col-lg-7">
                 <p class="card-text">
-                  We generate a mock catalogue of globular clusters reproducing the total mass, mass function, metallicity distribution, radial profile, and velocity dispersion of the Galactic globular cluster systems by applying our globular cluster formation model to simulated Milky Way-like galaxies. Based on this catalogue, we examine various clustering methods to categorize the progenitors of globular clusters, using their age, chemical, and kinematic properties, and subsequently apply the same methods and properties to Galactic clusters.
+                  We generate a mock catalog of globular clusters reproducing the total mass, mass function, metallicity distribution, radial profile, and velocity dispersion of the Galactic globular cluster systems by applying our globular cluster formation model to simulated Milky Way-like galaxies. Based on this catalog, we examine various clustering methods to categorize the progenitors of globular clusters, using their age, chemical, and kinematic properties, and subsequently apply the same methods and properties to Galactic clusters.
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -187,67 +298,6 @@
               <div class="col-lg-5">
                 <a rel="noopener noreferrer" target="_blank" href="figs/research/iom_mw_2_groups_sag.png">
                   <img width=100% src="figs/research/iom_mw_2_groups_sag.png" class="img-fluid rounded-start" alt="iom_mw_2_groups_sag">
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    
-    <div id="streams" class="section">
-      <div class="container">
-        <div class="col-lg-8 offset-lg-2">
-          <h1>Stellar streams</h1>
-          <p>
-            When a progenitor star cluster or a dwarf galaxy is orbiting the host galaxy, tidal forces strip stars away from the L<sub>1</sub> and L<sub>2</sub> Lagrange points, forming a stellar stream with a leading arm and a trailing arm. These streams, stretching across wide sky areas, can reveal information not only about the host galaxy but also the progenitor itself.
-          </p>
-
-          <div class="card">
-            <div class="row">
-              <h3 class="card-title">Modelling stellar streams that emerge from globular clusters</h3>
-              <p>
-                <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024arXiv240801496C/abstract" class="btn" role="button">Chen et al. (2025)</a>
-                <a rel="noopener noreferrer" target="_blank" href="https://github.com/ybillchen/particle_spray" class="btn" role="button">Tutorial notebook</a>
-              </p>
-              <div class="col-lg-7">
-                <p class="card-text">
-                  We develop a new particle spray algorithm to model the formation of globular cluster streams. The algorithm ejects stream tracer particles based on 6D phase space distributions calibrated to N-body simulations. It successfully matches the morphology and kinematics of simulated streams with higher accuracy than most existing particle spray methods. The new algorithm is implemented in galactic dynamics codes <span style="font-family: monospace;">agama</span>, <span style="font-family: monospace;">gala</span>, <span style="font-family: monospace;">galax</span>, and <span style="font-family: monospace;">galpy</span> for public use.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Figure: positions and velocity vectors of escaped stream particles near the Lagrange points.
-                  </small>
-                </p>
-              </div>
-              <div class="col-lg-5">
-                <a rel="noopener noreferrer" target="_blank" href="figs/research/movie_one_panel_co_rotate.gif">
-                  <img width=100% src="figs/research/movie_one_panel_co_rotate.gif" class="img-fluid rounded-start" alt="stream">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="row">
-              <h3 class="card-title">Measuring mass loss rates of globular clusters using stellar streams</h3>
-              <p>
-                <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024arXiv241119899C/abstract" class="btn" role="button">Chen, Li, & Gnedin (2025)</a>
-              </p>
-              <div class="col-lg-7">
-                <p class="card-text">
-                  By comparing the densities of streams recently discovered by <i>Gaia</i> DR3 with mock streams generated using our new particle spray algorithm, we present the first direct measurement of mass loss rates for 12 Galactic globular clusters. We further explore correlations between the mass loss rate and key GC properties, confirming theoretical predictions from N-body simulations.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Figure: mass loss rates of 12 Galactic globular clusters plotted against cluster mass.
-                  </small>
-                </p>
-              </div>
-              <div class="col-lg-5">
-                <a rel="noopener noreferrer" target="_blank" href="figs/research/mdot_scaling.png">
-                  <img width=100% src="figs/research/mdot_scaling.png" class="img-fluid rounded-start" alt="mass loss rate">
                 </a>
               </div>
             </div>
