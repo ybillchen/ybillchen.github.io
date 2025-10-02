@@ -171,7 +171,7 @@
             <div class="row">
               <h3 class="card-title">Most realistic mock catalog of globular cluster streams</h3>
               <p>
-                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Holm-Hansen, Chen, & Gnedin (in prep.)</a>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Holm-Hansen, Chen, & Gnedin (2025, in prep.)</a>
                 <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Catalog</a>
               </p>
               <div class="col-lg-6">
@@ -194,14 +194,14 @@
 
           <div class="card">
             <div class="row">
-              <h3 class="card-title">Detetcting streams around globular clusters</h3>
+              <h3 class="card-title">Automatic detection method for globular cluster streams</h3>
               <p>
-                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Chen et al. (in prep.)</a>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Chen et al. (2025, submitted)</a>
                 <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">GitHub repo</a>
               </p>
               <div class="col-lg-7">
                 <p class="card-text">
-                  We develop a new detection to detect stellar streams around globular clusters by constructing a mixture model containing a stream model and background. The stream model is based on our new particle spray algorithm, without assuming the shape and orientation of streams. The new method shows 70% completeness and purity when tested on mock data, and successfully detects streams around most globular clusters in our Galaxy when applied to <i>Gaia</i> DR3 data.
+                  We develop <i>StarStream</i>, a physics-based method to automatically detect stellar streams around globular clusters by constructing a mixture model containing a stream model and background. The stream model is based on our new particle spray algorithm, without assuming the shape and orientation of streams. The new method shows 65% completeness and purity when tested on mock data at high Galactic latitudes (|b|>30&deg;).
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -212,6 +212,31 @@
               <div class="col-lg-5">
                 <a rel="noopener noreferrer" target="_blank" href="figs/research/method_demo_phi1phi2.png">
                   <img width=100% src="figs/research/method_demo_phi1phi2.png" class="img-fluid rounded-start" alt="stream detection">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <h3 class="card-title">New streams in the Milky Way</h3>
+              <p>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Chen, Gnedin, & Price-Whelan (2025, in prep.)</a>
+                <a rel="noopener noreferrer" target="_blank" href="#" class="btn disabled" role="button">Data Release</a>
+              </p>
+              <div class="col-lg-7">
+                <p class="card-text">
+                  Applying <i>StarStream</i> to <i>Gaia</i> DR3, we successfully detect 87 globular cluster streams in the Milky Way. Many streams can significantly deviate the progenitor's orbit or have "irregular" morphology, contradicting the past visual expectation. The quantified detection quality enables us to measure unbiased cluster mass loss rates for 34 high-quality detections. We find several low-mass, large-size clusters with enhanced mass loss rates, likely driven by black holes comprising around 20% of the current cluster mass.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Figure: NGC 4147's short, "blobby" stream.
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <a rel="noopener noreferrer" target="_blank" href="figs/research/NGC_4147_stream.png">
+                  <img width=100% src="figs/research/NGC_4147_stream.png" class="img-fluid rounded-start" alt="NGC 4147's stream">
                 </a>
               </div>
             </div>
