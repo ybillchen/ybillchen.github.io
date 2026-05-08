@@ -79,6 +79,33 @@ img {
 /*  border-radius: 20px;*/
 }
 
+/* language switch */
+
+.lang-en, .lang-zh { font-size: inherit; font-weight: inherit; }
+.lang-opt { cursor: pointer; text-decoration: none; }
+.lang-pill {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid #cb3c6f;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+.lang-pill-opt {
+  padding: 0 8px;
+  color: #cb3c6f;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.lang-pill-opt.active {
+  background-color: #cb3c6f;
+  color: white;
+}
+.lang-pill-opt:hover { text-decoration: none; }
+.lang-pill-sep { width: 1px; background-color: #cb3c6f; }
+
 /* navbar */
 
 .navbar {
