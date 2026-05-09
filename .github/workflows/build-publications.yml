@@ -1,0 +1,37 @@
+name: Build Publications
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '0 6 * * 0'   # Every Sunday at 06:00 UTC
+  workflow_dispatch:        # Allow manual runs from the Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Build publications page
+        env:
+          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
+        run: python scripts/build_publications.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add publications_live.html
+          git diff --staged --quiet || git commit -m "Auto-update publications from SciX [skip ci]"
+          git push

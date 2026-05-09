@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Bill Chen">
+    <title>Bill Chen — Publications</title>
+
+    <link href="figs/icon.svg" rel="icon">
+    <link href="figs/icon.svg" rel="apple-touch-icon">
+
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar fixed-top navbar-expand-md">
+      <div class="container">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="figs/list.svg" alt="menu" width="30px">
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link active" href="publications_live.html">Publications</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="publications" class="first_section">
+      <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+          <h1>Bill's publications</h1>
+          <p>
+            Publications are auto-generated from the
+            <a rel="noopener noreferrer" target="_blank" href="https://scixplorer.org/user/libraries/F1MRsWjEQSaE5bmKO_L1Ag">SciX library</a>
+            and will appear here after the first GitHub Actions build.
+            In the meantime, see the <a href="publications.html">static publications page</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="copyrights" class="mt-auto">
+      <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+          <p>&copy; 2020 &mdash; <span id="year"></span> Bill Chen</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/bootstrap.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
