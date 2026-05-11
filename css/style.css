@@ -81,7 +81,17 @@ img {
 
 /* language switch */
 
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('../fonts/LXGWWenKai-title.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .lang-en, .lang-zh { font-size: inherit; font-weight: inherit; }
+
+h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
 .lang-opt { cursor: pointer; text-decoration: none; }
 .lang-pill {
   display: inline-flex;
