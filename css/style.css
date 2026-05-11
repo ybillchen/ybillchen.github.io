@@ -83,7 +83,7 @@ img {
 
 @font-face {
   font-family: 'LXGWWenKai';
-  src: url('../fonts/LXGWWenKai-title.woff2') format('woff2');
+  src: url('../fonts/LXGWWenKai-title.woff2?v=2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
