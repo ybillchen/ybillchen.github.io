@@ -1,11 +1,7 @@
 name: Build Publications
 
 on:
-  push:
-    branches: [master]
-  schedule:
-    - cron: '0 6 * * 0'   # Every Sunday at 06:00 UTC
-  workflow_dispatch:        # Allow manual runs from the Actions tab
+  workflow_dispatch:        # Manual runs only (push and schedule disabled)
 
 jobs:
   build:
