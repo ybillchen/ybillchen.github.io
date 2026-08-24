@@ -158,6 +158,54 @@ h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
   width: 100%;
 }
 
+/* news */
+
+#news.card {
+  padding: 15px;
+}
+
+#news h3 {
+  margin-bottom: 10px;
+}
+
+#news h3 a {
+  color: black;
+  font-size: inherit;
+}
+
+#news h3 a:hover, #news h3 a:focus {
+  color: #cb3c6f;
+  text-decoration: none;
+}
+
+.news-caret {
+  vertical-align: -1px;
+  margin-left: 2px;
+  color: #cb3c6f;
+  transition: transform 0.2s ease;
+}
+
+#news-toggle[aria-expanded="true"] .news-caret {
+  transform: rotate(90deg);
+}
+
+.news-item {
+  margin-bottom: 8px;
+}
+
+#news-more .news-item:last-child {
+  margin-bottom: 0;
+}
+
+.news-date {
+  color: gray;
+  white-space: nowrap;
+}
+
+.news-date::after {
+  content: " \2014 ";
+}
+
 /* contact */
 
 #contact {

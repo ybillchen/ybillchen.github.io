@@ -13,7 +13,7 @@
     <link href="figs/icon.svg" rel="apple-touch-icon">
 
     <link href="bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css?v=3" rel="stylesheet">
+    <link href="css/style.css?v=4" rel="stylesheet">
 </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -28,6 +28,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="research.html">Research</a>
             <a class="nav-link" href="publications.html">Publications</a>
+            <a class="nav-link" rel="noopener noreferrer" target="_blank" href="files/CV_YingtianChen.pdf">CV</a>
           </ul>
         </div>
       </div>
@@ -52,10 +53,10 @@
               <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/yingtianchen"><img border="0" src="figs/linkedin.svg" width=36px></a>&nbsp;
             </p>
             <p class="lang-en">
-              I will start a postdoc position at the <a rel="noopener noreferrer" target="_blank" href="https://ccapp.osu.edu/">Center for Cosmology and AstroParticle Physics (CCAPP)</a> at the Ohio State University as a CCAPP Fellow in fall 2026. I received my Ph.D. at the <a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">University of Michigan Department of Astronomy</a> in summer 2026, where I worked with Prof. <a rel="noopener noreferrer" target="_blank" href="http://www-personal.umich.edu/~ognedin/">Oleg Gnedin</a>. Before coming to Michigan, I received my B.S. degree at <a rel="noopener noreferrer" target="_blank" href="http://www.phy.pku.edu.cn/">Peking University School of Physics</a> in 2020.
+              I received my Ph.D. from the <a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">University of Michigan Department of Astronomy</a> in summer 2026, where I worked with Prof. <a rel="noopener noreferrer" target="_blank" href="http://www-personal.umich.edu/~ognedin/">Oleg Gnedin</a>. Before coming to Michigan, I received my B.S. degree at <a rel="noopener noreferrer" target="_blank" href="http://www.phy.pku.edu.cn/">Peking University School of Physics</a> in 2020.
             </p>
             <p class="lang-zh" hidden>
-              自2026年秋起，我将以 CCAPP Fellow 的身份加入<a rel="noopener noreferrer" target="_blank" href="https://ccapp.osu.edu/">俄亥俄州立大学宇宙学和天体粒子物理学中心</a>成为一名博士后。 在此之前，我于<a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">密歇根大学天文系</a>获得了博士学位，师从 <a rel="noopener noreferrer" target="_blank" href="http://www-personal.umich.edu/~ognedin/">Oleg Gnedin</a> 教授。我此前在2020年于<a rel="noopener noreferrer" target="_blank" href="http://www.phy.pku.edu.cn/">北京大学物理学院</a>获得了理学学士学位。
+              我在2026年夏于<a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">密歇根大学天文系</a>获得了博士学位，师从 <a rel="noopener noreferrer" target="_blank" href="http://www-personal.umich.edu/~ognedin/">Oleg Gnedin</a> 教授。我此前在2020年于<a rel="noopener noreferrer" target="_blank" href="http://www.phy.pku.edu.cn/">北京大学物理学院</a>获得了理学学士学位。
             </p>
             <p class="lang-en">
               I'm a theorist+observer trying to uncover the mysteries of galaxy formation probed by star clusters and stellar streams. <a rel="noopener noreferrer" href="research.html">Click here</a> to learn more about my research.
@@ -63,12 +64,36 @@
             <p class="lang-zh" hidden>
               我通过理论和观测结合的方法研究星团和星流。这些古老的恒星集团记录了星系早期的信息。科研详情请<a rel="noopener noreferrer" href="research.html">点击这里</a>。
             </p>
-            <p>
-              <a rel="noopener noreferrer" target="_blank" href="files/CV_YingtianChen.pdf" class="btn lang-en" role="button">Curriculum Vitae</a>
-              <a rel="noopener noreferrer" target="_blank" href="files/CV_YingtianChen.pdf" class="btn lang-zh" hidden role="button">个人简历</a>
-              <a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro/people/graduate-students/ybchen.html" class="btn lang-en" role="button">UM Portal</a>
-              <a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro/people/graduate-students/ybchen.html" class="btn lang-zh" hidden role="button">密大主页</a>
-            </p>
+            <div id="news" class="card">
+              <h3>
+                <a href="#" id="news-toggle" role="button" aria-expanded="false" aria-controls="news-more">
+                  <span class="lang-en">News</span>
+                  <span class="lang-zh" hidden>近况</span>
+                  <svg class="news-caret" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                </a>
+              </h3>
+
+              <!-- Newest item first; the rest go in #news-more, revealed by the caret. -->
+              <p class="news-item">
+                <span class="news-date">
+                  <span class="lang-en">Fall 2026</span><span class="lang-zh" hidden>2026年秋</span>
+                </span>
+                <span class="lang-en">I will start a postdoc position at the <a rel="noopener noreferrer" target="_blank" href="https://ccapp.osu.edu/">Center for Cosmology and AstroParticle Physics (CCAPP)</a> at the Ohio State University as a CCAPP Fellow!</span>
+                <span class="lang-zh" hidden>我将以 CCAPP Fellow 的身份加入<a rel="noopener noreferrer" target="_blank" href="https://ccapp.osu.edu/">俄亥俄州立大学宇宙学和天体粒子物理学中心</a>成为一名博士后!</span>
+              </p>
+
+              <div id="news-more" hidden>
+                <p class="news-item">
+                  <span class="news-date">
+                    <span class="lang-en">Summer 2026</span><span class="lang-zh" hidden>2026年夏</span>
+                  </span>
+                  <span class="lang-en">I received my Ph.D. from the <a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">University of Michigan Department of Astronomy</a>!</span>
+                  <span class="lang-zh" hidden>我于<a rel="noopener noreferrer" target="_blank" href="https://lsa.umich.edu/astro">密歇根大学天文系</a>获得博士学位!</span>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="col-lg-3">
             <img src="figs/profile.jpg" alt="head" class="img-fluid" style="border-radius: 20px">
@@ -117,6 +142,14 @@
       });
 
       setLang(localStorage.getItem('lang') || 'en');
+
+      document.getElementById('news-toggle').addEventListener('click', e => {
+        e.preventDefault();
+        const more = document.getElementById('news-more');
+        const open = more.hidden;
+        more.hidden = !open;
+        e.currentTarget.setAttribute('aria-expanded', open);
+      });
     </script>
 
   </body>
