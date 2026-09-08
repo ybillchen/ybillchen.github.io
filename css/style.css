@@ -161,7 +161,11 @@ h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
 /* news */
 
 #news.card {
-  padding: 15px;
+  padding: 15px 20px;
+  border: none;
+  border-left: 4px solid #cb3c6f;
+  border-radius: 10px;
+  background-color: #fdf1f5;
 }
 
 #news h3 {
@@ -169,19 +173,17 @@ h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
 }
 
 #news h3 a {
-  color: black;
+  color: #cb3c6f;
   font-size: inherit;
 }
 
 #news h3 a:hover, #news h3 a:focus {
-  color: #cb3c6f;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .news-caret {
   vertical-align: -1px;
   margin-left: 2px;
-  color: #cb3c6f;
   transition: transform 0.2s ease;
 }
 
