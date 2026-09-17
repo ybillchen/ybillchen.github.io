@@ -13,7 +13,7 @@
     <link href="figs/icon.svg" rel="apple-touch-icon">
 
     <link href="bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css?v=6" rel="stylesheet">
+    <link href="css/style.css?v=8" rel="stylesheet">
 </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -59,28 +59,26 @@
               我是俄亥俄州立大学<a rel="noopener noreferrer" target="_blank" href="https://ccapp.osu.edu/">宇宙学和天体粒子物理学中心</a>的博士后。我通过<b>理论+观测</b>的方法研究星团和星流。这些古老的恒星集团记录了星系早期的信息。科研详情请<a rel="noopener noreferrer" href="research.html">点击这里</a>。
             </p>
             <p class="lang-en">
-              Before coming to Ohio, I received my Ph.D. from the University of Michigan and B.S. degree from Peking University. In free time, I'm an amateur deep-sky photographer. I also enjoy rock climbing, weightlifting, and exploring new restaurants. If you're reading this page from a conference, feel free to invite me to hang out, work out, or eat out.
+              Before coming to Ohio, I received my Ph.D. from the University of Michigan and B.S. degree from Peking University. In free time, I'm an amateur deep-sky photographer; I also enjoy rock climbing, weightlifting, and exploring new restaurants.
             </p>
             <p class="lang-zh" hidden>
-              在加入俄亥俄之前，我分别于北京大学和密歇根大学获得了学士和博士学位。在闲暇时间，我对深空摄影也略知一二。如果不那么闲暇，我也喜欢攀岩、举铁、探店。如果你在正在一场学术会议里刷这个网页，那尽管邀请我去攀一把、练一下、搓一顿。
+              在加入俄亥俄之前，我分别于北京大学和密歇根大学获得了学士和博士学位。在闲暇时间，我对深空摄影略知一二；如果不那么闲暇，我也喜欢攀岩、举铁、探店。
             </p>
             <div id="news" class="card">
               <h3>
-                <a href="#" id="news-toggle" role="button" aria-expanded="false" aria-controls="news-more">
-                  <span class="lang-en">News</span>
-                  <span class="lang-zh" hidden>近况</span>
-                  <svg class="news-caret" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                  </svg>
-                </a>
+                <span class="lang-en">News</span>
+                <span class="lang-zh" hidden>近况</span>
               </h3>
 
-              <!-- Newest item first; the rest go in #news-more, revealed by the caret. -->
+              <!-- Newest item first; the rest go in #news-more, before the "Show less" link. -->
               <p class="news-item">
                 <span class="news-date"><span class="lang-en">Summer 2026</span><span class="lang-zh" hidden>2026年夏</span></span>
                 <span class="lang-en">Our <i>Roman</i> Cycle 1 proposal, <i>Revealing Missing Globular Cluster Streams: Mapping the Milky Way Halo with Roman HLWAS</i> (ID: <a rel="noopener noreferrer" target="_blank" href="https://roman.ipac.caltech.edu/cycle1-approved-programs/19072">19072</a>), was approved!</span>
                 <span class="lang-zh" hidden>我作为负责人提交的罗曼空间望远镜第一轮提案《揭示球状星团未被探明的星流: 利用罗曼高纬广域巡天数据绘制一幅银河系晕的地图》(ID: <a rel="noopener noreferrer" target="_blank" href="https://roman.ipac.caltech.edu/cycle1-approved-programs/19072">19072</a>) 成功获批!</span>
               </p>
+              <a href="#" id="news-show-more" class="news-toggle" role="button" aria-expanded="false" aria-controls="news-more">
+                <span class="lang-en">Show more</span><span class="lang-zh" hidden>展开</span>
+              </a>
 
               <div id="news-more" hidden>
                 <p class="news-item">
@@ -93,6 +91,9 @@
                   <span class="lang-en">I will join the Ohio State University Center for Cosmology and AstroParticle Physics (CCAPP) as a CCAPP Postdoctoral Fellow in Fall!</span>
                   <span class="lang-zh" hidden>我将在秋季以 CCAPP Postdoctoral Fellow 的身份加入俄亥俄州立大学宇宙学和天体粒子物理学中心!</span>
                 </p>
+                <a href="#" class="news-toggle" role="button" aria-expanded="true" aria-controls="news-more">
+                  <span class="lang-en">Show less</span><span class="lang-zh" hidden>收起</span>
+                </a>
               </div>
             </div>
           </div>
@@ -144,12 +145,14 @@
 
       setLang(localStorage.getItem('lang') || 'en');
 
-      document.getElementById('news-toggle').addEventListener('click', e => {
-        e.preventDefault();
-        const more = document.getElementById('news-more');
-        const open = more.hidden;
-        more.hidden = !open;
-        e.currentTarget.setAttribute('aria-expanded', open);
+      const newsMore = document.getElementById('news-more');
+      const newsShowMore = document.getElementById('news-show-more');
+      document.querySelectorAll('.news-toggle').forEach(el => {
+        el.addEventListener('click', e => {
+          e.preventDefault();
+          newsMore.hidden = !newsMore.hidden;
+          newsShowMore.hidden = !newsMore.hidden;
+        });
       });
     </script>
 
