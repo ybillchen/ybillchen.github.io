@@ -172,8 +172,20 @@ h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
   margin-bottom: 10px;
 }
 
-.news-toggle {
-  align-self: flex-start;
+.news-toggle-row {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0c8d7;
+  text-align: center;
+}
+
+.news-caret {
+  vertical-align: -2px;
+  margin-left: 4px;
+}
+
+.news-toggle[aria-expanded="true"] .news-caret {
+  transform: rotate(180deg);
 }
 
 .news-item {
