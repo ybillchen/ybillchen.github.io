@@ -1,5 +1,9 @@
 /* header */
 
+#headerbase.first_section {
+  margin-top: 40px;
+}
+
 #headerwrap {
   background: url(../figs/scarf.png);
   background-position: center center;
@@ -59,5 +63,9 @@
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 20px;
+}
+
+.section {
+  scroll-margin-top: 20px;
 }
