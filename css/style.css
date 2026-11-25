@@ -16,6 +16,11 @@ h3 {
   font-weight: 600;
 }
 
+/* The global "* { font-size: 18px }" otherwise shrinks <i>, <sub>, etc. inside titles */
+.card-title * {
+  font-size: inherit;
+}
+
 
 p {
   color: black;
@@ -147,6 +152,11 @@ h1 .lang-zh { font-family: 'LXGWWenKai', 'KaiTi', 'STKaiti', '楷体', serif; }
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+  scroll-margin-top: 100px;
+}
+
+/* Cards linked directly (e.g. research.html#euclid-am1) clear the fixed navbar */
+.card[id] {
   scroll-margin-top: 100px;
 }
 
